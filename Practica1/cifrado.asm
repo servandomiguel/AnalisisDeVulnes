@@ -7,7 +7,7 @@ _start:
 	mov ebx, 0x00 ; inicio del for
 
 corr_d: ; se utiliza un for para realizar la rotacion n(10) veces
-	cmp edx,ebx ; compara registri d con b
+	cmp edx,ebx ; compara el registro d con b
 	jle invertir ; si d <= b salta a salir
 	add ebx,0x01 ; suma 1 a ebx
 	mov eax,[DATO] ;movemos el valor de DATO a el reg A 
@@ -31,7 +31,7 @@ invertir: ; se realizan dos operaciones para aumentar la seguridad del cifrado
 	
 	mov edx, 0x04 ; limite del for 
 	mov ebx, 0x00 ; inicio del for
-corr_i: ; El mismo procedimiento que en corr_s con un cambion en el sentido de la rotacion
+corr_i: ; El mismo procedimiento que en corr_d con un cambio en el sentido de la rotacion
 	cmp edx,ebx ; compara registri d con b
 	jle salir ; si d <= b salta a salir
 	add ebx,0x01 ; suma 1 a ebx
