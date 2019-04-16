@@ -1,0 +1,6 @@
+State      Recv-Q  Send-Q    Local Address:Port              Peer Address:Port  
+LISTEN     0       128           127.0.0.1:postgresql             0.0.0.0:*     
+LISTEN     0       128           127.0.0.1:5433                   0.0.0.0:*     
+TIME-WAIT  0       0           192.168.0.8:58612          168.197.123.161:http  
+LISTEN     0       128               [::1]:postgresql                [::]:*     
+LISTEN     0       128               [::1]:5433                      [::]:*     
